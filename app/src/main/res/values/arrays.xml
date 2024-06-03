@@ -1,0 +1,43 @@
+<resources>
+    <string-array name="theme_entries">
+        <item>@string/theme_system</item>
+        <item>@string/theme_light</item>
+        <item>@string/theme_dark</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>System</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="social_app_one">WhatsApp</string>
+    <string name="social_app_two">Signal</string>
+    <string name="social_app_three">Telegram</string>
+
+    <string-array name="messaging_app_entries">
+        <item>WhatsApp</item>
+        <item>Signal</item>
+        <item>Telegram</item>
+    </string-array>
+
+    <string-array name="messaging_app_values">
+        <item>WhatsApp</item>
+        <item>Signal</item>
+        <item>Telegram</item>
+    </string-array>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+</resources>

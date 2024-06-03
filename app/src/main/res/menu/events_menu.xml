@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--item for our search view with its id-->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="200"
+        android:title="@string/action_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView"
+        tools:ignore="AlwaysShowAction" />
+    <item
+        android:id="@+id/menu_event_favourite"
+        android:icon="@drawable/ic_star"
+        android:checkable="true"
+        android:orderInCategory="100"
+        android:title="@string/favourite"
+        android:tooltipText="Toggle Favourites"
+        app:showAsAction="always" />
+
+    <group android:id="@+id/csv">
+        <item
+            android:id="@+id/menu_import"
+            android:orderInCategory="200"
+            android:title="@string/import_csv"
+            android:tooltipText="Import Events(s) (CSV)"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/menu_export"
+            android:orderInCategory="300"
+            android:title="@string/export_all_csv"
+            android:tooltipText="Export Events (CSV)"
+            app:showAsAction="never" />
+    </group>
+    <group android:id="@+id/data">
+        <item
+            android:id="@+id/menu_restore_event"
+            android:orderInCategory="400"
+            android:title="@string/restore_data"
+            android:tooltipText="Restore Events Data"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/menu_backup_event"
+            android:orderInCategory="500"
+            android:title="@string/backup_data"
+            android:tooltipText="Backup Events Data"
+            app:showAsAction="never" />
+    </group>
+</menu>

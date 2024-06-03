@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_edit"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:orderInCategory="100"
+        android:title="@string/edit"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_update_member_profile_pic"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:orderInCategory="200"
+        android:title="@string/update_profile_picture"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_add_member_event"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:orderInCategory="200"
+        android:title="@string/add_member_event"
+        app:showAsAction="ifRoom" />
+    <group android:id="@+id/delete">
+        <item
+            android:id="@+id/menu_delete"
+            android:icon="@android:drawable/ic_menu_delete"
+            android:orderInCategory="300"
+            android:title="@string/delete"
+            app:showAsAction="never" />
+    </group>
+    <group android:id="@+id/csv">
+        <item
+            android:id="@+id/menu_export_member_csv"
+            android:orderInCategory="200"
+            android:title="@string/export_member_csv"
+            app:showAsAction="never" />
+    </group>
+</menu>

@@ -1,0 +1,94 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "61971ae138564c5f4a6cde7fcc3c3165",
+    "entities": [
+      {
+        "tableName": "Events",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`eid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `details` TEXT NOT NULL, `place` TEXT NOT NULL, `venue` TEXT NOT NULL, `admins` TEXT, `participants` TEXT, `start_date` TEXT NOT NULL, `start_time` TEXT NOT NULL, `end_date` TEXT NOT NULL, `end_time` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "eid",
+            "columnName": "eid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "details",
+            "columnName": "details",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "place",
+            "columnName": "place",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "venue",
+            "columnName": "venue",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "admins",
+            "columnName": "admins",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "participnts",
+            "columnName": "participants",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "startDate",
+            "columnName": "start_date",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "startTime",
+            "columnName": "start_time",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "endDate",
+            "columnName": "end_date",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "endTime",
+            "columnName": "end_time",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "eid"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '61971ae138564c5f4a6cde7fcc3c3165')"
+    ]
+  }
+}

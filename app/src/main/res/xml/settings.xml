@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <PreferenceCategory
+        android:title="@string/preferences"
+        app:icon="@drawable/ic_prefernces">
+        <ListPreference
+            android:key="theme"
+            android:title="@string/app_theme"
+            app:icon="@drawable/ic_theme"
+            app:useSimpleSummaryProvider="true"
+            android:defaultValue="System"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values" />
+        <EditTextPreference
+            android:key="db_storage_dir"
+            android:title="@string/db_storage_dir"
+            android:dialogLayout="@layout/settings_edit_text"
+            android:defaultValue="@string/app_name"
+            app:icon="@drawable/ic_data_dir"
+            app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+            android:key="title"
+            android:title="@string/group_title"
+            android:dialogLayout="@layout/settings_edit_text"
+            android:icon="@drawable/ic_group"
+            android:defaultValue="@string/nav_header_title"
+            app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+            android:key="subtitle"
+            android:title="@string/group_subtitle"
+            android:icon="@drawable/ic_group"
+            android:dialogLayout="@layout/settings_edit_text"
+            android:defaultValue="@string/nav_header_subtitle"
+            app:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/menu_members"
+        app:icon="@drawable/ic_members">
+        <SwitchPreference
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:key="members_name_swap_toggle"
+            android:title="@string/members_name_swap"
+            app:icon="@drawable/ic_swap_names"
+            android:defaultValue="false"/>
+        <ListPreference
+            android:key="messaging_app"
+            android:title="@string/contact_app"
+            app:icon="@drawable/ic_social_app"
+            app:useSimpleSummaryProvider="true"
+            android:defaultValue="WhatsApp"
+            android:entries="@array/messaging_app_entries"
+            android:entryValues="@array/messaging_app_values" />
+    </PreferenceCategory>
+    <PreferenceCategory>
+    <Preference
+            app:key="about"
+            app:title="@string/menu_about"
+            app:icon="@drawable/ic_menu_about"
+            app:summary="@string/app_name">
+        <intent
+            android:targetPackage="app.sudroid.mements"
+            android:targetClass="app.sudroid.mements.AboutActivity"
+            />
+        </Preference>
+</PreferenceCategory>
+
+</PreferenceScreen>

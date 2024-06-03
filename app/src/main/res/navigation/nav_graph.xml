@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MembersFragment">
+
+    <fragment
+        android:id="@+id/MembersFragment"
+        android:name="app.sudroid.mements.ui.members.MembersFragment"
+        android:label="@string/menu_members"
+        tools:layout="@layout/fragment_members">
+
+        <action
+            android:id="@+id/action_MembersFragment_to_EventsFragment"
+            app:destination="@id/EventsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/EventsFragment"
+        android:name="app.sudroid.mements.ui.events.EventsFragment"
+        android:label="@string/menu_events"
+        tools:layout="@layout/fragment_events">
+
+        <action
+            android:id="@+id/action_EventsFragment_to_MembersFragment"
+            app:destination="@id/MembersFragment" />
+    </fragment>
+</navigation>

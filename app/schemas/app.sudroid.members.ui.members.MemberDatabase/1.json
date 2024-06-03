@@ -1,0 +1,112 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "559308d7525ba2c778a55b6e56b6eac5",
+    "entities": [
+      {
+        "tableName": "Members",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `full_name` TEXT NOT NULL, `phone` TEXT NOT NULL, `address` TEXT NOT NULL, `email` TEXT, `nick_name` TEXT, `description` TEXT, `dob` TEXT, `bio` TEXT, `family` TEXT, `whatsapp` TEXT, `facebook` TEXT, `web` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fullName",
+            "columnName": "full_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phone",
+            "columnName": "phone",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "address",
+            "columnName": "address",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nickName",
+            "columnName": "nick_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dob",
+            "columnName": "dob",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "bio",
+            "columnName": "bio",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "family",
+            "columnName": "family",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "whatsapp",
+            "columnName": "whatsapp",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "facebook",
+            "columnName": "facebook",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "web",
+            "columnName": "web",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "uid"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '559308d7525ba2c778a55b6e56b6eac5')"
+    ]
+  }
+}

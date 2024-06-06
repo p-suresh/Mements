@@ -25,7 +25,7 @@
             android:id="@+id/iv_about"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.2"
+            android:layout_weight="0.15"
             app:srcCompat="@drawable/mements" />
 
         <TextView
@@ -52,10 +52,19 @@
             android:id="@+id/tv_about_licence"
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:layout_weight="0.3"
+            android:layout_weight="0.1"
             android:text="@string/app_licence"
             android:textAlignment="center"
             android:textSize="14sp" />
 
+        <TextView
+            android:id="@+id/tv_about_source"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="0.3"
+            android:text="@string/app_source_url"
+            android:autoLink="web"
+            android:textAlignment="center"
+            android:textSize="14sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

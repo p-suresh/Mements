@@ -13,4 +13,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="grey_dark">#333333</color>
     <color name="grey_light">#666666</color>
+    <color name="text_color">#15A092</color>
 </resources>

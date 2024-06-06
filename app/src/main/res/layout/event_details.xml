@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="all"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="18sp" />
 
         </LinearLayout>
@@ -90,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:autoLink="map"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="18sp" />
 
         </LinearLayout>
@@ -135,7 +135,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="map"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="18sp" />
 
         </LinearLayout>
@@ -180,7 +180,7 @@
                     android:id="@+id/tv_event_admins"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/text_color"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -224,7 +224,7 @@
                 android:id="@+id/tv_event_participants"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="18sp" />
 
         </LinearLayout>
@@ -269,7 +269,7 @@
                 android:id="@+id/tv_event_start_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="18sp" />
 
         </LinearLayout>
@@ -314,7 +314,7 @@
                 android:id="@+id/tv_event_end_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="18sp" />
 
         </LinearLayout>

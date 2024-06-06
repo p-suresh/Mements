@@ -45,7 +45,7 @@
                 android:id="@+id/tv_member_full_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -90,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:autoLink="phone"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -135,7 +135,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="map"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -181,7 +181,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:autoLink="email"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/text_color"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -226,7 +226,7 @@
                 android:id="@+id/tv_member_nick_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -271,7 +271,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="all"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -316,7 +316,7 @@
                 android:id="@+id/tv_member_dob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -361,7 +361,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="all"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -406,7 +406,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="all"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -454,7 +454,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="phone"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -499,7 +499,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="web"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -544,7 +544,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="web"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -589,7 +589,7 @@
                     android:id="@+id/tv_member_events"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/text_color"
                     android:textSize="16sp" />
 
             </LinearLayout>

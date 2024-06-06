@@ -45,7 +45,8 @@
             android:maxLength="20"
             android:paddingTop="6dp"
             android:singleLine="true"
-            android:textSize="16sp" />
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
         <TextView
             android:id="@+id/tv_event_start_date_time"
             android:layout_width="wrap_content"

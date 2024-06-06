@@ -22,7 +22,6 @@ import app.sudroid.mements.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 import timber.log.Timber
 
-
 const val EVENTS_DATABASE_NAME = "events.db"
 const val MEMBERS_DATABASE_NAME = "members.db"
 const val DATABASE_BACKUP_SUFFIX = "-bkp"
@@ -38,7 +37,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
